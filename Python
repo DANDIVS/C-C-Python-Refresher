@@ -1,1 +1,15 @@
+import argparse
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Simple CLI tool example")
+    parser.add_argument("--input", required=True, help="Input file path")
+    parser.add_argument("--output", required=True, help="Output file path")
+    args = parser.parse_args()
+
+    print(f"Reading from: {args.input}")
+    print(f"Writing to:   {args.output}")
+    # Placeholder for real processing logic
+
+if __name__ == "__main__":
+    main()
 

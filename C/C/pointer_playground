@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;
+    int *p = &x;
+
+    printf("Initial x = %d\n", x);
+    *p = 20;
+    printf("After *p = 20, x = %d, *p = %d\n", x, *p);
+
+    return 0;
+}
